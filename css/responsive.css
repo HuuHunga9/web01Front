@@ -229,6 +229,12 @@
     p.heading--p::after {
         display: none;
     }
+    p.page2--khoi__p {
+        display: none;
+    }
+    p.page2--khoi__p-mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 423px) {
