@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+:root {
+    --font-color: #222;
+    --white: #fff;
+    --bg-header__top: rgb(248, 153, 56);
+    --hover--color: rgb(21, 21, 219);
+    --bg-header__bottom: rgb(78, 44, 120);
+    --hover--font__color: rgb(243, 131, 19);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header--div__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 70px;
+    background: var(--bg-header__top);
+}
+
+p.header--top__hotline {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.header--top__icons {
+    display: flex;
+}
+
+a.header--icons__logo {
+    font-size: 14px;
+    color: var(--white);
+    padding: 0 6px;
+}
+
+a.header--icons__logo:hover {
+    color: var(--hover--color);
+}
+
+.header--div {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 72px;
+    align-items: center;
+    background-color: var(--bg-header__bottom);
+}
+
+a.header--div__logo {
+    width: 12rem;
+    display: block;
+}
+
+img.header--logo__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header--div__navbar {}
+
+ul.header--navbar__ul {
+    display: flex;
+    list-style: none;
+}
+
+a.header--li__link,
+p.header--li__link {
+    padding: 0 8px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 600;
+    opacity: .9;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+a.header--li__link:hover,
+p.header--li__link:hover {
+    color: var(--hover--font__color);
+    opacity: 1;
+}
+
+i.fa-solid.fa-angle-down {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.header--ul__li {
+    position: relative;
+}
+
+.header--ul__li:hover .header--suvnav {
+    transform: translateY(0);
+    visibility: inherit;
+    opacity: 1;
+}
+
+.header--suvnav {
+    position: absolute;
+    top: 165%;
+    left: 0;
+    min-width: 228px;
+    max-width: 320px;
+    background: #fff;
+    box-shadow: 0 0 4px #000;
+    transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.header--suvnav::after {
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -36px;
+    left: 42px;
+}
+
+.header--suvnav::before {
+    content: "";
+    width: 54%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    display: block;
+    background-color: transparent;
+}
+
+ul.header--suvnav__ul {
+    list-style: none;
+    padding: 16px;
+}
+
+a.header--suvnav__ul--li-link {
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 0;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+a.header--suvnav__ul--li-link:hover {
+    opacity: 1;
+}
+
+.header--suvnav__ul--li:last-child a.header--suvnav__ul--li-link {
+    border: none;
+}
+
+.header--ul__li:hover .header--suvnav__dchVu {
+    transform: translateY(0);
+    visibility: inherit;
+    opacity: 1;
+}
+
+.header--suvnav__dchVu {
+    position: absolute;
+    top: 165%;
+    left: -244px;
+    min-width: 820px;
+    background: #fff;
+    box-shadow: 0 0 4px #000;
+    transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+    display: flex;
+}
+
+.header--suvnav__dchVu::after {
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -36px;
+    left: 274px;
+}
+
+.header--suvnav__dchVu::before {
+    content: "";
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    left: 260px;
+    top: -30px;
+    display: block;
+    background-color: transparent;
+}
+
+.header--dichvu__khoi1 {
+    width: calc(100% / 3);
+}
+
+.header--suvnav-dichVu__ul {
+    list-style: none;
+    padding: 16px;
+}
+
+.header--suvnav-dichVu__ul--li-link {
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 0;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.header--suvnav-dichVu__ul--li-link:hover {
+    opacity: 1;
+}
+
+.header--suvnav-dichVu__ul--li:last-child a.header--suvnav-dichVu__ul--li-link {
+    border: none;
+}
+
+.link-inDam {
+    font-weight: 600;
+    opacity: 1;
+}
+
+a.header--li__link-phone {
+    padding: 10px 16px;
+    background: #fff;
+    position: relative;
+    top: -8px;
+    border-radius: 20px;
+    background-color: var(--bg-header__top);
+    color: var(--white);
+    font-weight: 600;
+    opacity: .95;
+    margin-left: 8px;
+}
+
+a.header--li__link-phone:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 4px rgb(221, 220, 220);
+}
+
+a.header--li__link-phone:active {
+    box-shadow: none;
+}
+
+img.iconPhone {
+    position: relative;
+    top: 7px;
+    left: -4px;
+}
+
+
+/* slider */
+
+p.slider--item__img {
+    width: 100%;
+}
+
+p.slider--item__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Page1 */
+
+.page1--container__col {
+    background-image: linear-gradient(150deg, #4e2c78 0%, #946cc6 100%);
+    margin-top: -6px;
+}
+
+.page1--container__item {
+    padding: 16px;
+    position: relative;
+}
+
+.page1--container__col.col.l-3 {}
+
+h4.page1--item__h4 {
+    font-size: 22px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+p.page1--item__p {
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding-bottom: 16px;
+}
+
+p.icon--bacSy {
+    position: absolute;
+    top: -45px;
+    left: 22px;
+    width: 75px;
+}
+
+img.icon--bacSy__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+a.btn-dangky {
+    display: block;
+    font-size: 16px;
+    background: var(--bg-header__top);
+    width: 162px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 24px;
+    border-radius: 20px;
+    color: var(--white);
+    text-transform: capitalize;
+    transition: all .2s ease-in;
+}
+
+a.btn-dangky:hover {
+    box-shadow: 0 0 1px 2px rgba(240, 122, 5, 0.8), 0 0 1px 8px rgb(248 153 56 /30%), 0 0 1px 18px rgb(248 153 56 /10%)
+}
+
+
+/* page2 */
+
+.page2 {
+    background: url('https://alisadental.com/wp-content/uploads/2019/03/background-menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 0;
+}
+
+h1.heading {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: var(--bg-header__top);
+}
+
+p.heading--p {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+p.heading--p::after {
+    position: absolute;
+    content: "";
+    top: 208%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-header__top);
+    display: block;
+    width: 10%;
+    height: 4px;
+}
+
+.page2--container__row {
+    margin-top: 80px;
+}
+
+.page2--container__col {
+    margin-bottom: 30px;
+}
+
+a.page2--item__img {
+    width: 100%;
+    display: block;
+}
+
+a.page2--item__img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.page2--container__item {
+    position: relative;
+}
+
+p.page2--item__p {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    background: rgba(243, 131, 19, .8);
+    padding: 12px;
+    color: #fff;
+    font-size: 16px;
+    visibility: initial;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .2s ease-in;
+}
+
+.page2--item__img:hover p.page2--item__p {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+.page2--item__khoi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 5px);
+    width: 100%;
+    background-color: rgba(78, 44, 120, 0.8);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease-in;
+    transform: scale(.9);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.page2--item__img:hover .page2--item__khoi {
+    transform: scale(1);
+    visibility: inherit;
+    opacity: 1;
+}
+
+p.page2--khoi__p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+p.page2--khoi__p span {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+
+/* page3 */
+
+.page3 {
+    padding: 48px 0;
+    background: url('https://alisadental.com/wp-content/uploads/2019/03/background-menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page3--container__row {
+    margin-top: 80px;
+}
+
+p.page3--item__img {
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+p.page3--item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+p.page3--item__ten {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    color: rgb(75, 45, 119);
+}
+
+p.page3--item__loiNoi {
+    font-size: 16px;
+    color: #222;
+    margin-top: 16px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+p.page3--item__gach {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 24px;
+    color: #222;
+}
+
+p.page3--item__thongtin {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: rgb(75, 45, 119);
+}
+
+p.page3--item__p1 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+p.page3--item__p1 span {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+p.page3--item2__img {
+    width: 100%;
+    height: 100%;
+}
+
+p.page3--item2__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* page4 */
+
+.page4 {
+    padding: 48px 0;
+    background: url('https://alisadental.com/wp-content/uploads/2019/03/background-menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p.page4--item__img {
+    width: 100%;
+}
+
+p.page4--item__img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.page4--container__col-bg {
+    background-image: linear-gradient(150deg, #4e2c78 0%, #996ece 100%);
+    padding: 0 24px;
+}
+
+p.page4--item__kienThuc {
+    color: rgb(243, 131, 19);
+    margin-top: 42px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+p.page4--item__p {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+a.page4--item__link1 {
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 0;
+    display: block;
+    line-height: 1.6;
+    border-bottom: 1px solid #ccc;
+    transition: all .2s ease-in;
+}
+
+a.page4--item__link1:hover {
+    color: var(--bg-header__top);
+}
+
+p.page4--item__link1-p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.page4--item__link1:last-child {
+    border: none;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 48px 0;
+    background-image: linear-gradient(150deg, #4e2c78 0%, #996ece 100%);
+}
+
+a.footer--logo {
+    width: 80px;
+}
+
+img.footer--logo__img {
+    object-fit: cover;
+}
+
+p.footer--item__p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: justify;
+}
+
+h4.footer--item__h4 {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 42px;
+    display: block;
+    position: relative;
+}
+
+h4.footer--item__h4::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 36%;
+    left: 0;
+    bottom: -20px;
+    height: 2px;
+}
+
+.footer--2 {
+    font-size: 14px !important;
+}
+
+img.footer--item__img {
+    position: relative;
+    top: 4px;
+    right: 8px;
+    bottom: 2px;
+}
+
+.footer--bottom {
+    padding: 16px;
+    background-color: var(--bg-header__top);
+}
+
+p.footer--bottom__p {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+/* Menu */
+
+p.header--menu {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.header--suvnav__mobile {
+    display: none;
+}
+
+.header--__ul--li-logo {
+    display: none !important;
+}
+
+.header--close {
+    display: none;
+}
+
+.header--div__logo-mobile-man400 {
+    display: none;
+}
+
+.header--close--man400 {
+    display: none;
+}
+
+.header--div.position {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    animation: xuong .3s ease-in;
+}
+
+@keyframes xuong {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
