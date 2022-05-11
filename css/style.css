@@ -121,6 +121,7 @@ i.fa-solid.fa-angle-down {
     visibility: hidden;
     opacity: 0;
     transition: all .2s ease-in;
+    z-index: 10;
 }
 
 .header--suvnav::after {
@@ -186,6 +187,7 @@ a.header--suvnav__ul--li-link:hover {
     opacity: 0;
     transition: all .2s ease-in;
     display: flex;
+    z-index: 10;
 }
 
 .header--suvnav__dchVu::after {
@@ -316,9 +318,10 @@ p.page1--item__p {
 
 p.icon--bacSy {
     position: absolute;
-    top: -45px;
+    top: -30px;
     left: 22px;
     width: 75px;
+    z-index: 10;
 }
 
 img.icon--bacSy__img {
@@ -732,4 +735,126 @@ p.header--menu {
     100% {
         transform: translateY(0);
     }
+}
+
+
+/* slider */
+
+button.owl-prev,
+button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000;
+    background-color: transparent;
+}
+
+button.owl-next {
+    right: 50px;
+    transform: translateX(-80px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.slider--container:hover button.owl-next {
+    transform: translateX(0);
+    visibility: inherit;
+    opacity: 1;
+}
+
+button.owl-next span {
+    position: absolute;
+    top: -12px;
+    left: 19px;
+    font-size: 50px;
+    color: #fff;
+}
+
+button.owl-prev {
+    left: 50px;
+    transform: translateX(80px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+button.owl-next:hover,
+button.owl-prev:hover {
+    background-color: var(--bg-header__top) !important;
+}
+
+.slider--container:hover button.owl-prev {
+    transform: translateX(0);
+    visibility: inherit;
+    opacity: 1;
+    transition: all .2s ease-in;
+}
+
+button.owl-prev span {
+    position: absolute;
+    top: -13px;
+    left: 16px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    color: var(--bg-header__top);
+}
+
+.slick-prev {
+    left: -40px;
+}
+
+button.slick-next {
+    transform: translateX(68px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+button.slick-prev {
+    transform: translateX(-68px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.main--slider:hover button.slick-next {
+    transform: translateX(0);
+    visibility: inherit;
+    opacity: 1;
+}
+
+.main--slider:hover {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.main--slider:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.main--slider:hover button.slick-prev {
+    transform: translateX(0);
+    visibility: inherit;
+    opacity: 1;
+}
+
+.slick-dots {
+    display: none !important;
 }
