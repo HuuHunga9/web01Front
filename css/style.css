@@ -449,6 +449,14 @@ p.page2--item__p {
     opacity: 1;
 }
 
+p.page2--khoi__p-mobile {
+    display: none;
+    text-align: justify;
+    text-align-last: center;
+    margin: auto;
+}
+
+p.page2--khoi__p-mobile,
 p.page2--khoi__p {
     font-size: 14px;
     color: #fff;
