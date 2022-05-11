@@ -37,6 +37,13 @@
     }
 }
 
+@media (max-width: 1113px) {
+    button.slick-prev,
+    button.slick-next {
+        display: none !important;
+    }
+}
+
 @media (max-width: 1023px) {
     .header--div {
         padding: 12px 30px;
@@ -48,6 +55,10 @@
         width: calc(100% - 16px);
         margin-left: auto;
         margin-right: auto;
+    }
+    button.slick-prev,
+    button.slick-next {
+        display: none !important;
     }
 }
 
@@ -188,6 +199,10 @@
         color: rgb(247, 39, 39);
     }
     .header--close--man400 {
+        display: none;
+    }
+    button.owl-prev,
+    button.owl-next {
         display: none;
     }
 }
